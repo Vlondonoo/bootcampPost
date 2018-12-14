@@ -1,3 +1,5 @@
-<p>
-  comments works!
-</p>
+<ul>
+  <li *ngFor="let comment of dataPost">
+    <pre>{{ comment.body  | json}}</pre>
+  </li>
+</ul>

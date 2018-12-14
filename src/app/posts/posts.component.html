@@ -1,3 +1,17 @@
-<p>
-  posts works!
-</p>
+<mat-card class="my-card"> 
+
+
+    <mat-list>
+        <mat-list-item *ngFor="let post of data">
+            
+          <h3 matLine> Id: {{ post.userId}} </h3>
+         
+              <button (click)="shareinfo(post)" >{{ post.title }}</button>           
+          
+         
+        </mat-list-item>
+     
+      </mat-list>
+
+  
+</mat-card>
